@@ -16,10 +16,12 @@ Pytorch implementation of GCM-Net
 `python eval.py --bs batch_size --model checkpoint --img_flist image_path --mask_flist mask_path`
 
 ### Bibtex
-`@inproceedings{zheng2021gcm,
+```
+@inproceedings{zheng2021gcm,
   title={GCM-Net: Towards Effective Global Context Modeling for Image Inpainting},
   author={Zheng, Huan and Zhang, Zhao and Wang, Yang and Zhang, Zheng and Xu, Mingliang and Yang, Yi and Wang, Meng},
   booktitle={Proceedings of the 29th ACM International Conference on Multimedia},
   pages={2586--2594},
   year={2021}
-}`
+}
+```
