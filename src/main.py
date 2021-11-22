@@ -97,15 +97,15 @@ def train(epoch):
         g_fake, _ = model.discriminator(prediction)
         g_gan_loss = model.adversarial_loss(g_fake, True, False)
         
-        g_l1_unknown = model.l1_loss(gt, merged_result) / torch.mean(mask)
-        g_l1_known = model.l1_loss(gt, prediction)# / torch.mean(mask)
-        g_l1_loss = g_l1_unknown * 2 + g_l1_known
+        g_l1_unknown = model.l1_loss(gt, merged_result) / torch.mean(mask) # maksed region
+        g_l1_known = model.l1_loss(gt, prediction)# / torch.mean(mask) $ maksed + unmasked region
+        g_l1_loss = g_l1_unknown * 5 + g_l1_known
         
         style_loss = model.style_loss(gt, merged_result)
         perceptual_loss = model.perceptual_loss(gt, merged_result)
         tv_loss = TV_loss(merged_result)
 
-        g_loss += model.l1_weight * g_l1_loss + model.gan_weight * g_gan_loss + 0.1 * perceptual_loss + 250 * style_loss + 0.1 * tv_loss
+        g_loss += model.l1_weight * g_l1_loss + model.gan_weight * g_gan_loss + 0.1 * perceptual_loss + 200 * style_loss + 0.1 * tv_loss
         
         
         # Record
