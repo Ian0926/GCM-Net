@@ -12,10 +12,10 @@ Official Pytorch implementation of [GCM-Net: Towards Effective Global Context Mo
 ### Train: 
 `python main.py --bs batch_size --img_flist image_path --mask_flist mask_path --nEpochs 100 --lr 0.0001`
 
-### Test
+### Test:
 `python eval.py --bs batch_size --model checkpoint --img_flist image_path --mask_flist mask_path`
 
-### Bibtex
+### Bibtex:
 ```
 @inproceedings{zheng2021gcm,
   title={GCM-Net: Towards Effective Global Context Modeling for Image Inpainting},
