@@ -98,7 +98,7 @@ def train(epoch):
         g_gan_loss = model.adversarial_loss(g_fake, True, False)
         
         g_l1_unknown = model.l1_loss(gt, merged_result) / torch.mean(mask) # maksed region
-        g_l1_known = model.l1_loss(gt, prediction)# / torch.mean(mask) $ maksed + unmasked region
+        g_l1_known = model.l1_loss(gt, prediction) / torch.mean(mask) # maksed + unmasked region
         g_l1_loss = g_l1_unknown * 5 + g_l1_known
         
         style_loss = model.style_loss(gt, merged_result)
