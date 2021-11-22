@@ -10,8 +10,8 @@ Pytorch implementation of GCM-Net
 4. cuda 11.4
 
 ### Train: 
-'python main.py --bs batch_size --img_flist image_path --mask_flist mask_path --nEpochs 40 --lr 0.0001'
+`python main.py --bs batch_size --img_flist image_path --mask_flist mask_path --nEpochs 40 --lr 0.0001`
 
 ### Test
-'python eval.py --bs batch_size --model checkpoint --img_flist image_path --mask_flist mask_path'
+`python eval.py --bs batch_size --model checkpoint --img_flist image_path --mask_flist mask_path`
 
