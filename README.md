@@ -1,7 +1,7 @@
 # GCM-Net: Towards Effective Global Context Modeling for Image Inpainting (ACM MM2021)
 
 # Pytorch 
-official Pytorch implementation of ![GCM-Net: Towards Effective Global Context Modeling for Image Inpainting](https://dl.acm.org/doi/pdf/10.1145/3474085.3475433)
+Official Pytorch implementation of [GCM-Net: Towards Effective Global Context Modeling for Image Inpainting](https://dl.acm.org/doi/pdf/10.1145/3474085.3475433).
 
 ## Environment
 1. Python 3.6 
