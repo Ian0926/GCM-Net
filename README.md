@@ -9,7 +9,7 @@ Official Pytorch implementation of [GCM-Net: Towards Effective Global Context Mo
 4. cuda 11.4
 
 ### Train: 
-`python main.py --bs batch_size --img_flist image_path --mask_flist mask_path --nEpochs 100 --lr 0.0001`
+`python main.py --bs batch_size --img_flist image_path --mask_flist mask_path --nEpochs 100`
 
 ### Test:
 `python eval.py --bs batch_size --model checkpoint --img_flist image_path --mask_flist mask_path`
