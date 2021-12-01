@@ -12,7 +12,7 @@ Official Pytorch implementation of [GCM-Net: Towards Effective Global Context Mo
 `python main.py --bs batch_size --img_flist image_path --mask_flist mask_path`
 
 ### Test:
-`python eval.py --bs batch_size --model checkpoint --img_flist image_path --mask_flist mask_path`
+`python eval.py --bs batch_size --model checkpoint --img_flist image_path --mask_flist mask_path --save`
 
 ### Bibtex:
 ```
